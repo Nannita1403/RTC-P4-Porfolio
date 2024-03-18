@@ -1,98 +1,88 @@
 @import 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap';
 
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
-  line-height: 1.5;
-  font-weight: 400;
+  --font-family-tittle:'IBM Plex Mono', sans-serif;
+  --font-family-text:'Ubuntu', sans-serif;
+  --font-weigth-thin: 100;
+  --font-weigth-light-regular: 300;
+  --font-weigth-medium: 500;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /*COLORS: BACKGROUND, TEXT, BUTTONS*/
+  --rtc-background-color: linear-gradient(
+    to right,
+    #eceeef,
+    #d9dfe2,
+    #c5d0d4,
+    #b1c2c6,
+    #9eb4b7
+  );
+  --background-color1: #292F36;
+  --background-color2: #1A1E23;
+  --title-color1: #12F7D6;
+  --brand-color2: #98FAEC;
+  --color-grey: #43454d;
+  --color-white: #ffffff;
+  --color-html: #E54F26;
+  --color-css: #0C73B8;
+  --color-js: #E7A020;
+  --color-react: #28A9E0;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*SPACING: MARGIN, PADDING, */
+  --margin-xs: 5px;
+  --margin-s: 10px;
+  --margin-m: 15px;
+  --margin-l: 20px;
+  --margin-xl: 30px;
+  --margin-xxl: 40px;
+  --margin-xxxl: 60px;
+
+  --padding-xs: 5px;
+  --padding-s: 10px;
+  --padding-m: 15px;
+  --padding-l: 20px;
+  --padding-xl: 30px;
+
+  --gap-s: 10px;
+  --gap-m: 20px;
+
+  --border-radius: 8px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  list-style: none;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--background-color1);
+  position: relative;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+a {
+  text-decoration: none;
+}
+h1,
+h2{
+  text-wrap: balance;
+  color: var(--title-color1);
+  font-family: var(--font-family-tittle);
+  font-size: 32px;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h3,
+h4,
+p {
+  text-wrap: balance;
+  color: var(--color-white);
+  font-size: 16px;
+  font-family: var(--font-family-text);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+/*h3 {
+  font-size: 2em;
+}*/
