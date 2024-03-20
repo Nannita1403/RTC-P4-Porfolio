@@ -1,5 +1,5 @@
-import { divApp, header } from './components/1.header/header'
-import { aside } from './components/2.NavigationBar/aside'
+import { divApp, header } from './src/components/1.header/header'
+import { aside } from './src/components/2.NavigationBar/aside'
 
 import './style.css'
 aside
