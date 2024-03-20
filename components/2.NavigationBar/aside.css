@@ -17,6 +17,7 @@ ul {
 li img{
     padding: 8px 8px;
     width: 40px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
