@@ -1,18 +1,16 @@
-import { divApp, header } from './src/components/1.header/header'
-import { aside } from './src/components/2.NavigationBar/aside'
+import { header } from './src/components/1.header/header'
+import { aside, divApp } from './src/components/2.NavigationBar/aside'
 
 import './style.css'
-aside
 
-divApp
-header
 const initializeApp = async () => {
   // 1) Lleno .gallery con imágenes
   // await showGallery();
 
   // Agrego header
   divApp.appendChild(header);
-  divApp.appendChild(aside);
+  aside ();
+  //divApp.appendChild(aside);
   //refreshGallery();
 
 
@@ -26,4 +24,8 @@ const initializeApp = async () => {
 };
 
 initializeApp();
+
+
+
+
 
