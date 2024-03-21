@@ -7,27 +7,27 @@ import { Contact } from '../components/6.Contact/sectionContact.js';
 
 export const navLinks = [
      {
-    name: 'Default',ese menubar
+    name: 'Default',
     url: '#Default',
+    img: {src= "/1.Default.png" alt='defaul'},
     page: Default,
-    img: src="./public/1.Default.png" alt='defaul',
   },
   {
     name: 'About Me',
     url: '#AboutMe',
-    img src:'./public/2.AboutMe.png' alt='AboutMe',
+    img: {src:'/2.AboutMe.png' alt='AboutMe'},
     page: AboutMe,
   },
   {
     name: 'Skills',
     url: '#Skills',
-    img src='./public/3.Skills.png' alt='Skills',
+    img: {src:'./public/3.Skills.png' alt='Skills'},
     page: Skills,
   },
   {
     name: 'Works',
     url: '#Works',
-    img src='./public/4.Works.png' alt='Works',
+    img: { src:'./public/4.Works.png' alt:'Works'},
     page: Works,
   },
   {
