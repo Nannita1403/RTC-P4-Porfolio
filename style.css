@@ -74,9 +74,7 @@ h2{
   font-size: 32px;
 }
 
-h3,
-h4,
-p {
+h4 {
   text-wrap: balance;
   color: var(--color-white);
   font-size: 16px;
