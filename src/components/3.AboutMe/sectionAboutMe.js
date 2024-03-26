@@ -25,7 +25,7 @@ export const createAboutMe = () => {
   pImgFinal.src = './_p_.png';
   imgArticule.src = './imgArticule.png';
 
-  aboutMeSection.classList.add('aboutMe-section');
+  aboutMeSection.classList.add('#AboutMe');
   imgButtonMousse.classList.add('buttonMousse');
   title.classList.add('title');
   divText.classList.add('text')

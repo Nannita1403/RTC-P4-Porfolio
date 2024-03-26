@@ -1,64 +1,74 @@
 
 import { navLinks } from '../../.data/navLinks';
-import { Backend, FrontEnd, Others } from '../../.data/skills';
+//import { Backend, FrontEnd, Others } from '../../.data/skills';
 import { divSections } from '../3.AboutMe/sectionAboutMe';
-import "./Skills.css";
+import "./skills.css";
 
-const divApp = document.querySelector("#app");
 export const skillsSection = document.createElement('div');
 
 export const createSkills = () => {
   const imgButtonMousse = document.createElement('img');
-  const sectionAbout = document.createElement('section');
-  const articuleText = document.createElement('articule');
-  const title = document.createElement('img');
-  const divText =document.createElement('div');
-  const pImgInicio = document.createElement('img');
-  const textHola = document.createElement('h3');
-  const textInfo = document.createElement('p');
-  const pImgFinal = document.createElement('img');
-  const imgArticule = document.createElement('img');
+  const sectionSkills = document.createElement('section');
+  const tittle = document.createElement('h3');
+  const line = document.createElement('img')
+  const text = document.createElement('p');
+  const divButton = document.createElement('div');
+  const buttonWD = document.createElement('button');
+  const buttonAD = document.createElement('button');
+  const sectionIcons = document.createElement('section');
+  const iconCSS = document.createElement('img');
+  const iconJS = document.createElement('img');
+  const iconHTML = document.createElement('img');
+  const iconREACT = document.createElement('img');
+ 
 
   imgButtonMousse.src = './mousseLine.png';
-  title.src = './btnAboutMe.png';
-  pImgInicio.src = './_p_.png';
-  textHola.textContent = 'Hola!!!'
-  textInfo.textContent = 'Mi nombre es Natalia y me especializo en desarrollo web que utiliza HTML, CSS, JS y REACT, etc. Soy una persona muy motivada y eternamente optimista dedicada a escribir codigo claro, conciso y solido que funcione. Esforzandonos por nunca dejar de aprender y mejorar. Cuando no estoy codeando, leo o realizo algun nuevo proyecto artistico practico, como pintar. Me gusta que mi perspectiva y mis sistemas de creencias sean desafiados para poder ver el mundo con nuevos ojos.';
-  pImgFinal.src = './_p_.png';
-  imgArticule.src = './imgArticule.png';
+  line.src = './Line-options.png';
+  tittle.textContent = 'Skills';
+  text.textContent = 'Me ESFUERZO por nunca dejar de APRENDER y MEJORAR'
+  buttonAD.textContent = 'App Developement';
+  buttonWD.textContent = 'Web Developement';
+  iconCSS.src = './icon-css.png';
+  iconHTML.src = './icon-html.png';
+  iconJS.src = './icon-js.png';
+  iconREACT.src = './icon-react.png';
 
-  aboutMeSection.classList.add('aboutMe-section');
+  skillsSection.classList.add('#Skills');
   imgButtonMousse.classList.add('buttonMousse');
-  title.classList.add('title');
-  divText.classList.add('text')
-  articuleText.classList.add('artText');
-  sectionAbout.classList.add('sectAbout');
-  pImgInicio.classList.add('imgP');
-  pImgFinal.classList.add('imgP');
-  imgArticule.classList.add('imgArt');
-  textInfo.classList.add('textInfo');
+  tittle.classList.add('title');
+  text.classList.add('text')
+  sectionSkills.classList.add('sectionSkills');
+  line.classList.add('line');
+  sectionIcons.classList.add('sectionIcons')
+  iconCSS.classList.add('imgIcon');
+  iconJS.classList.add('imgIcon');
+  iconREACT.classList.add('imgIcon');
+  iconHTML.classList.add('imgIcon');
 
-  divText.append(pImgInicio);
-  divText.append(textHola);
-  divText.append(textInfo);
-  divText.append(pImgFinal);
-  articuleText.append(title);
-  articuleText.append(divText);
-  sectionAbout.append(articuleText);
-  sectionAbout.append(imgArticule);
+  sectionIcons.append(iconHTML);
+  sectionIcons.append(iconCSS);
+  sectionIcons.append(iconJS);
+  sectionIcons.append(iconREACT);
+  divButton.append(buttonWD);
+  divButton.append(buttonAD);  
+  sectionSkills.append(tittle);
+  sectionSkills.append(line)
+  sectionSkills.append(text)
+  sectionSkills.append(divButton)
+  sectionSkills.append(sectionIcons);
 
-  aboutMeSection.append(imgButtonMousse, sectionAbout);
+  skillsSection.append(imgButtonMousse, sectionSkills);
 
   document.addEventListener("DOMContentLoaded", function() {
-    if (!textInfo) {
+    if (!text) {
         console.error("El elemento textInfo no se encontró en el DOM.");
         return;
     }
-    const wordsToColor = ["Natalia", "HTML", "CSS", "JS", "REACT", "codeando", "Esforzandonos", "desafiados"];
+    const wordsToColor = ["ESFUERZO", "APRENDER", "MEJORAR"];
 
     let words;
-    if (typeof textInfo.textContent === "string") {
-        words = textInfo.textContent.match(/\b\w+\b/g);
+    if (typeof text.textContent === "string") {
+        words = text.textContent.match(/\b\w+\b/g);
     } else {
         console.error("El texto proporcionado no es una cadena de texto válida.");
         return;
@@ -73,7 +83,7 @@ export const createSkills = () => {
         }
     });
 
-    textInfo.innerHTML = coloredText;
+    text.innerHTML = coloredText;
 })
 }
 

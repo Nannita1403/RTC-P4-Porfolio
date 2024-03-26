@@ -1,6 +1,7 @@
 import { header } from './src/components/1.header/header'
 import { aside, divApp } from './src/components/2.NavigationBar/aside'
 import { createAboutMe, divSections} from './src/components/3.AboutMe/sectionAboutMe';
+import { createSkills } from './src/components/4.Skills/sectionSkills';
 import './style.css'
 
 const initializeApp = async () => {
@@ -13,6 +14,7 @@ const initializeApp = async () => {
   
   // Agrego sections y footer
   createAboutMe ();
+  createSkills ();
   //divApp.appendChild(aboutMe);
   //divApp.appendChild(footer);
 
