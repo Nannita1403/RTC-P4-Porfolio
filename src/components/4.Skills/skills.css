@@ -1,0 +1,50 @@
+#Skills {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+}
+
+ #Skills::after{
+    content:'';
+    background-image:url(./bc-technology.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.35;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: c;
+    margin-top: 30px;
+    padding: 20px;
+    height: 330px;
+    gap: 16px;
+    background-color: var(--background-color1);
+    border-radius: 15px;
+}
+
+.ulIcon {
+    display: grid;
+    /*flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color2);
+    border: 2px  solid var(--color-white);
+    border-radius: 24px;
+    padding: 12px 8px;
+    width: 50px;*/
+}
+li img{
+    padding: 8px 8px;
+    width: 40px;
+    cursor: pointer;
+    
+}

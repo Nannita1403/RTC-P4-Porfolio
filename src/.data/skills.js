@@ -1,29 +1,73 @@
 export const FrontEnd = [
-    "HTML5",
-    "CSS3", 
-    "SASS", 
-    "JavaScript", 
-    "TypeScript", 
-    "React", 
-    "Angular", 
-    "Styled Components",
-    "Material UI", 
-    "Chakra UI", 
-    "Framer Motion",
-    "React Testing Library" 
+    {
+        name: 'HTML5',
+        img: {src:'/icon-html.png'},
+      },
+      {
+        name: 'CSS3',
+        img: {src:'/icon-css.png'},
+      },
+      {
+        name: 'JavaScript',
+        img: {src:'/icon-js.png'},
+      },
+      {
+        name: 'REACT',
+        img: {src:'/icon-react.png'},
+      },
+      {
+        name: 'SASS',
+        img: {src:'/icon-sass.png'},
+      },
+      {
+        name: 'TypeScript',
+        img: {src:'/icon-tipescript.png'},
+      },
+  
+      {
+        name: 'ANGULAR',
+        img: {src:'/icon-angular.png'},
+      },
+      {
+        name: 'Chakra UI',
+        img: {src:'/icon-chakra-ui.png'},
+      }
 ];
 
 export const Backend = [
-    "Node.js",
-    "Express,js",
-    "MongoDB",
-    "JWT-Bcryt",
-    "Cloudinary"
+    {
+        name: 'NODE.js',
+        img: {src:'/icon-Node.js.svg'},
+      },
+      {
+        name: 'Express.js',
+        img: {src:'/icon-express-js.png'},
+      },
+      {
+        name: 'MongoDB',
+        img: {src:'/icon-mongoDB.png'},
+      },
+      {
+        name: 'Cloudinary',
+        img: {src:'/icon-Cloudinary.svg'},
+      }
 ];
 
 export const Others = [
-    "Vercel",
-    "Netlify",
-    "Git",
-    "Figma",
+    {
+        name: 'VERCEL',
+        img: {src:'/icon-vercel.png'},
+      },
+      {
+        name: 'Netlify',
+        img: {src:'/icon-netlify.png'},
+      },
+      {
+        name: 'Git',
+        img: {src:'/icon-git.png'},
+      },
+      {
+        name: 'FIGMA',
+        img: {src:'/icon-figma.png'},
+      }
 ]

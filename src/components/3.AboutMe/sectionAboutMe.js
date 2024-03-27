@@ -25,7 +25,7 @@ export const createAboutMe = () => {
   pImgFinal.src = './_p_.png';
   imgArticule.src = './imgArticule.png';
 
-  aboutMeSection.classList.add('#AboutMe');
+  aboutMeSection.setAttribute('id','AboutMe');
   imgButtonMousse.classList.add('buttonMousse');
   title.classList.add('title');
   divText.classList.add('text')
@@ -45,7 +45,7 @@ export const createAboutMe = () => {
   sectionAbout.append(articuleText);
   sectionAbout.append(imgArticule);
 
-  aboutMeSection.append(imgButtonMousse, sectionAbout);
+  aboutMeSection.append( imgButtonMousse, sectionAbout);
 
   document.addEventListener("DOMContentLoaded", function() {
     if (!textInfo) {

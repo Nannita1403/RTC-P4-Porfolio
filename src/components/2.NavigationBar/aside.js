@@ -9,10 +9,12 @@ export const divApp = document.querySelector("#app");
     const $aside = document.createElement('aside');
     $aside.classList.add('flex-container');
     const ul = document.createElement('ul');
+    ul.classList.add ('ulNav');
     navLinks.forEach((link, index) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       const img = document.createElement('img')
+      li.classList.add('liNav');
       //a.textContent = link.name;
       a.href = link.url;
       img.src=link.img.src;
@@ -21,6 +23,7 @@ export const divApp = document.querySelector("#app");
       ul.append(li);
       li.addEventListener('click', link.page);
     });
+
     $aside.append(ul);
     $body.prepend($aside);    
 }

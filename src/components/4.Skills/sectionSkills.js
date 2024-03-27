@@ -1,6 +1,4 @@
-
-import { navLinks } from '../../.data/navLinks';
-//import { Backend, FrontEnd, Others } from '../../.data/skills';
+import { Backend, FrontEnd, Others } from '../../.data/skills';
 import { divSections } from '../3.AboutMe/sectionAboutMe';
 import "./skills.css";
 
@@ -15,49 +13,66 @@ export const createSkills = () => {
   const divButton = document.createElement('div');
   const buttonWD = document.createElement('button');
   const buttonAD = document.createElement('button');
-  const sectionIcons = document.createElement('section');
-  const iconCSS = document.createElement('img');
-  const iconJS = document.createElement('img');
-  const iconHTML = document.createElement('img');
-  const iconREACT = document.createElement('img');
- 
-
+  const sectionIcons =document.createElement('section');
+  const ulIcons = document.createElement('ul');
+  
   imgButtonMousse.src = './mousseLine.png';
   line.src = './Line-options.png';
   tittle.textContent = 'Skills';
   text.textContent = 'Me ESFUERZO por nunca dejar de APRENDER y MEJORAR'
   buttonAD.textContent = 'App Developement';
   buttonWD.textContent = 'Web Developement';
-  iconCSS.src = './icon-css.png';
-  iconHTML.src = './icon-html.png';
-  iconJS.src = './icon-js.png';
-  iconREACT.src = './icon-react.png';
 
-  skillsSection.classList.add('#Skills');
+  skillsSection.setAttribute('id','Skills');
   imgButtonMousse.classList.add('buttonMousse');
   tittle.classList.add('title');
-  text.classList.add('text')
+  text.classList.add('textS')
   sectionSkills.classList.add('sectionSkills');
   line.classList.add('line');
-  sectionIcons.classList.add('sectionIcons')
-  iconCSS.classList.add('imgIcon');
-  iconJS.classList.add('imgIcon');
-  iconREACT.classList.add('imgIcon');
-  iconHTML.classList.add('imgIcon');
+  sectionIcons.classList.add('sectionIcons');
+  ulIcons.classList.add('ulIcon');
+ 
+  FrontEnd.forEach((link, index) => {
+    const li = document.createElement('li');
+    const img = document.createElement('img')
+    const a = document.createElement('a');
+    a.textContent = link.name;
+    img.src=link.img.src;
+    a.append(img);
+    li.append(a);
+    ulIcons.append(li);
+  });
+  Backend.forEach((link, index) => {
+    const li = document.createElement('li');
+    const img = document.createElement('img')
+    const a = document.createElement('a');
+    a.textContent = link.name;
+    img.src=link.img.src;
+    a.append(img);
+    li.append(a);
+    ulIcons.append(li);
+  });
 
-  sectionIcons.append(iconHTML);
-  sectionIcons.append(iconCSS);
-  sectionIcons.append(iconJS);
-  sectionIcons.append(iconREACT);
+  Others.forEach((link, index) => {
+    const li = document.createElement('li');
+    const img = document.createElement('img')
+    const a = document.createElement('a');
+    a.textContent = link.name;
+    img.src=link.img.src;
+    a.append(img);
+    li.append(a);
+    ulIcons.append(li);
+  });
+
   divButton.append(buttonWD);
   divButton.append(buttonAD);  
   sectionSkills.append(tittle);
   sectionSkills.append(line)
   sectionSkills.append(text)
   sectionSkills.append(divButton)
-  sectionSkills.append(sectionIcons);
+  sectionIcons.append(ulIcons);
 
-  skillsSection.append(imgButtonMousse, sectionSkills);
+  skillsSection.append(imgButtonMousse, sectionSkills, sectionIcons);
 
   document.addEventListener("DOMContentLoaded", function() {
     if (!text) {
