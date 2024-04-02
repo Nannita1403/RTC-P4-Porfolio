@@ -1,7 +1,7 @@
 export const FrontEnd = [
     {
-        name: 'HTML5',
-        img: {src:'/icon-html.png'},
+      img: {src:'/icon-html.png'},
+      name: 'HTML5',
       },
       {
         name: 'CSS3',
@@ -37,11 +37,11 @@ export const FrontEnd = [
 export const Backend = [
     {
         name: 'NODE.js',
-        img: {src:'/icon-Node.js.svg'},
+        img: {src:'/icono-node.png'},
       },
       {
         name: 'Express.js',
-        img: {src:'/icon-express-js.png'},
+        img: {src:'/icon-express.png'},
       },
       {
         name: 'MongoDB',
@@ -49,7 +49,7 @@ export const Backend = [
       },
       {
         name: 'Cloudinary',
-        img: {src:'/icon-Cloudinary.svg'},
+        img: {src:'/icon-cloudinary.png'},
       }
 ];
 

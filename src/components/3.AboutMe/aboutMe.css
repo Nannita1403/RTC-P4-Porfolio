@@ -47,7 +47,10 @@
 
 .title {
    width: 350px;
+   z-index: 0;
+   
 }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -72,14 +75,14 @@
 h3 {
  color: var(--title-color1);
  font-family: var(--font-family-tittle);
- font-size: 32px;
+ font-size: 5vw;
  font-weight: var(--font-weigth-light-regular);
 }
 
 p {
     color: var(--color-white);
     font-family: var(--font-family-tittle); 
-    font-size: 16px;
+    font-size: 1.5vw;
     font-weight: var(--font-weigth-thin);
 }
 
