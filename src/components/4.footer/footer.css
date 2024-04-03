@@ -1,5 +1,15 @@
 footer {
     height: 80px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer-links {   
+    display: flex;
+    gap: 10px;
+}
+  .footer-links img {
+    cursor: pointer;
+
   }
