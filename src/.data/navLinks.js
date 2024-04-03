@@ -1,6 +1,6 @@
 
-import { aboutMeSection } from '../components/3.AboutMe/sectionAboutMe.js';
-import { skillsSection } from '../components/4.Skills/sectionSkills.js';
+import { aboutMeSection } from '../components/3.Main/a.AboutMe/sectionAboutMe.js';
+import { skillsSection } from '../components/3.Main/b.Skills/sectionSkills.js';
 //import { Works } from '../components/5.Works/sectionWorks.js';
 //import { Contact } from '../components/6.Contact/sectionContact.js';
 

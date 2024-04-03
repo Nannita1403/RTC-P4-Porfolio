@@ -1,5 +1,5 @@
-import { Backend, FrontEnd, Others } from '../../.data/skills';
-import { divSections } from '../3.AboutMe/sectionAboutMe';
+import { Backend, FrontEnd, Others } from '../../../.data/skills';
+import { divSections } from '../a.AboutMe/sectionAboutMe';
 import "./skills.css";
 
 export const skillsSection = document.createElement('div');
