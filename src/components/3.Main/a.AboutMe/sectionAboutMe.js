@@ -1,5 +1,3 @@
-
-import { navLinks } from '../../../.data/navLinks';
 import "./aboutMe.css";
 
 export const divSections = document.querySelector("#sections");

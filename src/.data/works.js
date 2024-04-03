@@ -1,6 +1,6 @@
 export const Works = [
     {
-      title: "Ejercitacion Color 1: Estructura",
+      title: "Ejercitacion Color",
       description: 
       "Primer proyecto en Rock The Code, donde se pone en práctica todo lo aprendido de HTML5 así como de CSS3, haciendo uso de `positions`, `flex`, `custom variables`, etc.",
       github: `https://github.com/Nannita1403/color-flipper`,
