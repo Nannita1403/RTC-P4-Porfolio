@@ -24,11 +24,11 @@ export const Works = [
         preview: {src:'/icon-html.png'},
       },
       {
-        title: "Proyecto 3: 'Inspiration'",
+        title: "Proyecto 3: 'Photorest'",
         description: 
         "Con este proyecto, de parecido razonable a Pinterest, se practica la conexión con APIs a través de Javascript, en este caso la API Unsplash.",
         github: `https://github.com/Nannita1403/PROY3-RTC`,
-        netlify: `https://ej-colorflipper.netlify.app/`,
+        netlify: `https://photorest.netlify.app/`,
         preview: {src:'/icon-html.png'},
       },
       {

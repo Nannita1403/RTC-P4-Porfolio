@@ -13,7 +13,7 @@ export const createProyects = () => {
     const text = document.createElement('p');
     const sectionCards =document.createElement('section');
     const ulCards = document.createElement('ul');
-    const divC = document.createElement('div');
+    const divCs = document.createElement('div');
  
     imgButtonMousse.src = './mousseLine.png';
     line.src = './Line-options.png';
@@ -27,10 +27,8 @@ export const createProyects = () => {
     worksSection.classList.add('worksSection');
     line.classList.add('line');
     sectionCards.classList.add('sectionCards');
-    divC.classList.add('divCards');
+    divCs.classList.add('divCards');
     ulCards.classList.add('ulCards');
-    buttonG.classList.add('btnGit');
-    buttonN.classList.add('btnNet');
    
     Works.forEach((link, index) => {
       const li = document.createElement('li');
@@ -44,45 +42,33 @@ export const createProyects = () => {
       const aNet = document.createElement('a');
       const buttonG = document.createElement('button');
       const buttonN = document.createElement('button');    
+      buttonG.classList.add('btnGit');
+      buttonN.classList.add('btnNet');
+
       img.src=link.preview;
       h2.textContent = link.title;
       p.textContent = link.description;
       aGit.src=link.github;
       aNet.src=link.netlify;
-      aGit.append(buttonG);
-      aNet.append(buttonN);
-      buttonG.append(divRed);
-      buttonN.append(divRed);
+      buttonN.append(aNet);
+      buttonG.append(aGit);
+      divRed.append(buttonG);
+      divRed.append(buttonN);
       figure.append(img);
-      li.append(a);
-      ulIconsF.append(li);
+      divC.append(h2);
+      divC.append(p);
+      divC.append(figure);
+      li.append(divC);
+      li.append(divRed);
+      ulCards.append(li);
     });
   
-    <li class="card" id="card-1">
-       <div class="card-content">
-         <div>
-           <h2>Card One</h2>
-           <p>This is the content of card one. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-         </div>
-         <figure>
-           <img src="https://assets.codepen.io/210284/flower-9.jpg" alt="card-one">
-         </figure>
-       </div>
-     </li>
-  
-    divF.append(buttonF);
-    divF.append(ulIconsF);
-    divB.append(buttonB);  
-    divB.append(ulIconsB);
-    divO.append(buttonO); 
-    divO.append(ulIconsO);
-    sectionSkills.append(tittle);
-    sectionSkills.append(line);
-    sectionSkills.append(text);
-    sectionIcons.append(divF);
-    sectionIcons.append(divB);
-    sectionIcons.append(divO);
-    skillsSection.append(imgButtonMousse, sectionSkills, sectionIcons);
+    divCs.append(ulCards);
+    sectionWorks.append(tittle);
+    sectionWorks.append(line);
+    sectionWorks.append(text);
+    sectionCards.append(divCs);
+    worksSection.append(imgButtonMousse, sectionWorks, sectionCards);
   
     document.addEventListener("DOMContentLoaded", function() {
       if (!text) {
@@ -111,68 +97,5 @@ export const createProyects = () => {
       text.innerHTML = coloredText;
   })
   }
-  
- // Creacion de elementos del Header
- worksSection.innerHTML += `
- <body>
- <header>
-   <div>
-     <h1>Stacking Cards Animation</h1>
-     <p>Scroll down to stack the cards. Scroll back up to unstack them.</p>
-   </div>
- </header>
- <main>
-   <ul id="cards">
-     <li class="card" id="card-1">
-       <div class="card-content">
-         <div>
-           <h2>Card One</h2>
-           <p>This is the content of card one. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-         </div>
-         <figure>
-           <img src="https://assets.codepen.io/210284/flower-9.jpg" alt="card-one">
-         </figure>
-       </div>
-     </li>
-
-     <li class="card" id="card-2">
-       <div class="card-content">
-         <div>
-           <h2>Card Two</h2>
-           <p>This is the content of card two. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-         </div>
-         <figure>
-           <img src="https://assets.codepen.io/210284/flower-8.jpg" alt="card two">
-         </figure>
-       </div>
-     </li>
-
-     <li class="card" id="card-3">
-       <div class="card-content">
-         <div>
-           <h2>Card Three</h2>
-           <p>This is the content of card three. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-         </div>
-         <figure>
-           <img src="https://assets.codepen.io/210284/flower-7.jpg" alt="card three">
-         </figure>
-       </div>
-     </li>
-
-     <li class="card" id="card-4">
-       <div class="card-content">
-         <div>
-           <h2>Card Four</h2>
-           <p>This is the content of card four. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-         </div>
-         <figure>
-           <img src="https://assets.codepen.io/210284/flower-6.jpg" alt="card four">
-         </figure>
-       </div>
-     </li>
-   </ul>
- </main>
-</body>
- `;
 
  divSections.append(worksSection);
