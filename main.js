@@ -3,6 +3,7 @@ import { header } from './src/components/1.header/header'
 import { aside, divApp } from './src/components/2.NavigationBar/aside'
 import { createAboutMe, divSections} from './src/components/3.Main/a.AboutMe/sectionAboutMe';
 import { createSkills } from './src/components/3.Main/b.Skills/sectionSkills';
+import { createProyects } from './src/components/3.Main/c.Works/sectionWorks';
 import { footer } from './src/components/4.footer/sectionFooter';
 
 import './style.css'
@@ -19,6 +20,7 @@ const initializeApp = async () => {
   // Agrego sections y footer
   createAboutMe ();
   createSkills ();
+  createProyects()
   //divApp.appendChild(aboutMe);
   //divApp.appendChild(footer);
   document.body.appendChild(footer);

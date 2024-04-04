@@ -26,6 +26,7 @@ export const createProyects = () => {
     text.classList.add('textS')
     worksSection.classList.add('worksSection');
     line.classList.add('line');
+    sectionWorks.classList.add('sectionWorks');
     sectionCards.classList.add('sectionCards');
     divCs.classList.add('divCards');
     ulCards.classList.add('ulCards');
@@ -35,31 +36,37 @@ export const createProyects = () => {
       const divC = document.createElement('div');
       const h2 = document.createElement('h2');
       const p = document.createElement('p');
-      const figure = document.createElement('figure');
       const img = document.createElement('img')
       const divRed =document.createElement('div');
       const aGit = document.createElement('a');
       const aNet = document.createElement('a');
       const buttonG = document.createElement('button');
-      const buttonN = document.createElement('button');    
+      const buttonN = document.createElement('button'); 
+      const div =document.createElement('div');  
+      const figure = document.createElement('figure'); 
       buttonG.classList.add('btnGit');
       buttonN.classList.add('btnNet');
+      divC.classList.add('divC');
+      divRed.classList.add('divRed');
 
-      img.src=link.preview;
+      img.src=link.preview.src;
       h2.textContent = link.title;
       p.textContent = link.description;
       aGit.src=link.github;
       aNet.src=link.netlify;
+      buttonN.textContent = 'Netlify';
+      buttonG.textContent = 'Github';
+      figure.append(img);
       buttonN.append(aNet);
       buttonG.append(aGit);
       divRed.append(buttonG);
       divRed.append(buttonN);
-      figure.append(img);
-      divC.append(h2);
-      divC.append(p);
+      div.append(h2);
+      div.append(p);
+      divC.append(div);
       divC.append(figure);
+      divC.append(divRed);
       li.append(divC);
-      li.append(divRed);
       ulCards.append(li);
     });
   

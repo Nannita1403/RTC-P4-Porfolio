@@ -1,10 +1,10 @@
 
 import { aboutMeSection } from '../components/3.Main/a.AboutMe/sectionAboutMe.js';
 import { skillsSection } from '../components/3.Main/b.Skills/sectionSkills.js';
+import { worksSection } from '../components/3.Main/c.Works/sectionWorks.js';
 //import { Works } from '../components/5.Works/sectionWorks.js';
 //import { Contact } from '../components/6.Contact/sectionContact.js';
-
- 
+  
 export const navLinks = [
      {
     name: 'Default',
@@ -28,7 +28,7 @@ export const navLinks = [
     name: 'Works',
     url: '#Works',
     img: {src:'/4.Works.png', alt:'Works'},
-    //page: Works,
+    page: worksSection,
   },
   {
     name: 'Contact',

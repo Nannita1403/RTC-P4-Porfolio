@@ -1,0 +1,85 @@
+ .worksSection {
+    text-align: center;
+    padding-bottom: 20vh
+  }
+
+  .sectionCards, .sectionWorks {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .sectionWorks {
+    height: 35vh;
+  display: grid;
+  place-items: center;
+  margin-bottom: 80px;
+  }
+
+  .ulCards {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--numcards), var(--card-height));
+    gap: var(--card-margin);
+    padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+    margin-bottom: var(--card-margin);
+  }
+  li {
+    position: sticky;
+    top: 0;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+  }
+
+  .divC {
+    box-shadow: 0 0.2em 1em rgba(18, 247, 214, 0.1), 0 1em 2em rgba(18, 247, 214, 0.1);
+    background: var(--background-color1);
+    color: #131212;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.4em;
+    margin-left: 20px;
+  }
+  .divRed{
+    display: flex;
+    justify-content: space-around;
+  }
+  .divC > div {
+    grid-area: text;
+    width: 95%;
+    max-width: 800px;
+    place-self: center;
+    text-align: left;
+    gap: 1em;
+    place-items: start;
+    margin-bottom: 10px;
+  }
+  .btnGit, .btnNet {
+    margin-left: 0px;
+  }
+  
+  .divC > figure {
+    overflow: hidden;
+  }
+  
+  .divC > figure > img {
+    width: 600px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: .4em;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  p {
+    font-weight: 300;
+    line-height: 1.42;
+    font-size: 1.1rem;
+  }
+  
