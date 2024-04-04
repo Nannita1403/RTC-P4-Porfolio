@@ -27,16 +27,8 @@ export const Works = [
         title: "Proyecto 3: 'Photorest'",
         description: 
         "Con este proyecto, de parecido razonable a Pinterest, se practica la conexión con APIs a través de Javascript, en este caso la API Unsplash.",
-        github: `https://github.com/Nannita1403/PROY3-RTC`,
+        github: `https://github.com/Nannita1403/photorest`,
         netlify: `https://photorest.netlify.app/`,
-        preview: {src:'/icon-html.png'},
-      },
-      {
-        title: "Proyecto 1: Estructura y estilo",
-        description: 
-        "Primer proyecto en Rock The Code, donde se pone en práctica todo lo aprendido de HTML5 así como de CSS3, haciendo uso de `positions`, `flex`, `custom variables`, etc.",
-        github: `https://github.com/Nannita1403/color-flipper`,
-        netlify: `https://ej-colorflipper.netlify.app/`,
         preview: {src:'/icon-html.png'},
       }
 ];
