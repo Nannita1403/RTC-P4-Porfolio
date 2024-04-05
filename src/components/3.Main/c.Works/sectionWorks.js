@@ -47,33 +47,31 @@ export const createProyects = () => {
       buttonG.classList.add('btnGit');
       buttonN.classList.add('btnNet');
       divC.classList.add('divC');
-      divRed.classList.add('divRed');
+      divRed.classList.add('divRed')
 
       img.src=link.preview.src;
       h2.textContent = link.title;
       p.textContent = link.description;
-      aGit.src=link.github;
-      aNet.src=link.netlify;
+      aGit.href=link.urlGit;
+      aNet.href=link.urlNet;
       buttonN.textContent = 'Netlify';
       buttonG.textContent = 'Github';
       figure.append(img);
-      buttonN.append(aNet);
-      buttonG.append(aGit);
-      divRed.append(buttonG);
-      divRed.append(buttonN);
-      div.append(h2);
-      div.append(p);
-      divC.append(div);
-      divC.append(figure);
-      divC.append(divRed);
-      li.append(divC);
+      aGit.append(buttonG);
+      aNet.append(buttonN);
+      //buttonN.append(aNet);
+      //buttonG.append(aGit);
+      buttonG.addEventListener('click', link.urlGit);
+      buttonN.addEventListener('click', link.urlNet);
+      divRed.append(buttonG, buttonN);
+      div.append(h2, p);
+      divC.append(div, figure, divRed);
+      li.append(divC, aGit, aNet);
       ulCards.append(li);
     });
   
     divCs.append(ulCards);
-    sectionWorks.append(tittle);
-    sectionWorks.append(line);
-    sectionWorks.append(text);
+    sectionWorks.append(tittle, line, text);
     sectionCards.append(divCs);
     worksSection.append(imgButtonMousse, sectionWorks, sectionCards);
   
