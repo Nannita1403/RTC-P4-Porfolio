@@ -4,6 +4,7 @@ import { aside, divApp } from './src/components/2.NavigationBar/aside'
 import { createAboutMe, divSections} from './src/components/3.Main/a.AboutMe/sectionAboutMe';
 import { createSkills } from './src/components/3.Main/b.Skills/sectionSkills';
 import { createProyects } from './src/components/3.Main/c.Works/sectionWorks';
+import { createContact } from './src/components/3.Main/d.Contact/sectionContact';
 import { footer } from './src/components/4.footer/sectionFooter';
 
 import './style.css'
@@ -20,9 +21,9 @@ const initializeApp = async () => {
   // Agrego sections y footer
   createAboutMe ();
   createSkills ();
-  createProyects()
-  //divApp.appendChild(aboutMe);
-  //divApp.appendChild(footer);
+  createProyects();
+  createContact();
+
   document.body.appendChild(footer);
 };
 

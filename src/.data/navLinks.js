@@ -2,7 +2,9 @@
 import { aboutMeSection } from '../components/3.Main/a.AboutMe/sectionAboutMe.js';
 import { skillsSection } from '../components/3.Main/b.Skills/sectionSkills.js';
 import { worksSection } from '../components/3.Main/c.Works/sectionWorks.js';
+import { contactSection } from '../components/3.Main/d.Contact/sectionContact.js';
 //import { Contact } from '../components/6.Contact/sectionContact.js';
+
 
   export const navLinks = [
      {
@@ -32,7 +34,7 @@ import { worksSection } from '../components/3.Main/c.Works/sectionWorks.js';
   {
     name: 'Contact',
     url: '#Contact',
-    img: {src:'./public/5.Contact.png', alt:'Contact'},
-    //page: Contact,
+    img: {src:'/5.Contact.png', alt:'Contact'},
+    page: contactSection,
   }
 ];

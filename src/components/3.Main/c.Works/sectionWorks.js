@@ -61,8 +61,7 @@ export const createProyects = () => {
       aNet.append(buttonN);
       //buttonN.append(aNet);
       //buttonG.append(aGit);
-      buttonG.addEventListener('click', link.urlGit);
-      buttonN.addEventListener('click', link.urlNet);
+
       divRed.append(buttonG, buttonN);
       div.append(h2, p);
       divC.append(div, figure, divRed);

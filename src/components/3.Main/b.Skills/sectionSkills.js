@@ -31,7 +31,7 @@ export const createSkills = () => {
 
   skillsSection.setAttribute('id','Skills');
   imgButtonMousse.classList.add('buttonMousse');
-  tittle.classList.add('titleS');
+  tittle.classList.add('titleSkills');
   text.classList.add('textS')
   sectionSkills.classList.add('sectionSkills');
   line.classList.add('line');
