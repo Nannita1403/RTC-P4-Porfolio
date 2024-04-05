@@ -3,6 +3,20 @@
     padding-bottom: 20vh
   }
 
+  .worksSection::after{
+    content:'';
+    background-image:url(./bc-abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.25;
+  }
   .sectionCards, .sectionWorks {
     width: 80vw;
     margin: 0 auto;

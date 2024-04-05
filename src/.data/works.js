@@ -18,7 +18,7 @@ export const Works = [
       {
         title: "Proyecto 2: Filtrado y Tienda Online de Comercio",
         description: 
-        "Con este proyecto se abre un conjunto de proyectos destinados a practicar Javascript, repasando HTML y CSS. Para el mismo, se crea una serie de productos para, posteriormente, poder filtrar por vendedor y por precio. Todo ello creado mediante JS.",
+        "Con este proyecto se abre un conjunto de proyectos para practicar JS, repasando HTML y CSS. Para el mismo, se crea replica una tienda de Nike pudiendo filtrar por vendedor y por precio. Todo ello creado mediante JS.",
         github: `https://github.com/Nannita1403/p2-NIKE`,
         netlify: `https://p2-nike-rtc.netlify.app/`,
         preview: {src:'/Proy2a-Tienda.png'},
@@ -29,6 +29,6 @@ export const Works = [
         "Con este proyecto de Rock The Code, se busca generar un parecido razonable a la pagina de Pinterest, se practica la conexión con APIs a través de Javascript, en este caso la API Unsplash.",
         github: `https://github.com/Nannita1403/photorest`,
         netlify: `https://photorest.netlify.app/`,
-        preview: {src:'/Proy3-Pinterest.png'},
+        preview: {src:'/Proy3-Photorest.png'},
       }
 ];

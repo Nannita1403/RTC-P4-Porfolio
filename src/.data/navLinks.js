@@ -2,15 +2,14 @@
 import { aboutMeSection } from '../components/3.Main/a.AboutMe/sectionAboutMe.js';
 import { skillsSection } from '../components/3.Main/b.Skills/sectionSkills.js';
 import { worksSection } from '../components/3.Main/c.Works/sectionWorks.js';
-//import { Works } from '../components/5.Works/sectionWorks.js';
 //import { Contact } from '../components/6.Contact/sectionContact.js';
-  
-export const navLinks = [
+
+  export const navLinks = [
      {
     name: 'Default',
-    url: '#Default',
+    url: '#header',
     img: {src:'/1.Default.png', alt:'defaul'},
-    //page: Default,
+    //page: header,
   },
   {
     name: 'About Me',

@@ -1,6 +1,6 @@
 import { navLinks } from '../../.data/navLinks';
 import "./aside.css";
-
+ 
 export const divApp = document.querySelector("#app");
 
 // Creacion de elementos del Header
