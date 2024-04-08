@@ -42,6 +42,8 @@
     position: sticky;
     top: 0;
     padding-top: calc(var(--index) * var(--card-top-offset));
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .divC {
@@ -59,6 +61,7 @@
   .divRed{
     display: flex;
     justify-content: space-around;
+    margin: 5px;
   }
   .divC > div {
     grid-area: text;

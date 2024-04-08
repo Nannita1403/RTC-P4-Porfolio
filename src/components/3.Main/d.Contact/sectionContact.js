@@ -9,6 +9,7 @@ import "./contact.css";
    const tittle = document.createElement('h3');
    const line = document.createElement('img')
    const text = document.createElement('p');
+   const divButt = document.createElement('div');
    const button = document.createElement('button');
    const a = document.createElement('a');
    
@@ -17,7 +18,7 @@ import "./contact.css";
    tittle.textContent = 'Contacto';
    text.textContent = 'Seguimos en CONTACTO? Estoy DISPONIBLE para tu PROPUESTA'
    button.textContent = 'Contactame';
-   button.href='https://www.linkedin.com/in/natalia-andrea-magi-8b36b663/';
+   a.href='https://www.linkedin.com/in/natalia-andrea-magi-8b36b663/';
  
    contactSection.setAttribute('id','Contact');
    imgButtonMousse.classList.add('buttonMousse');
@@ -28,8 +29,9 @@ import "./contact.css";
    button.classList.add('contact');
  
    a.append(button);
+   divButt.append(a)
    sectionContact.append(tittle, line, text);
-   contactSection.append(imgButtonMousse, sectionContact, button);
+   contactSection.append(imgButtonMousse, sectionContact, divButt);
  
    document.addEventListener("DOMContentLoaded", function() {
      if (!text) {

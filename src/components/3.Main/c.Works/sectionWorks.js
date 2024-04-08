@@ -59,13 +59,11 @@ export const createProyects = () => {
       figure.append(img);
       aGit.append(buttonG);
       aNet.append(buttonN);
-      //buttonN.append(aNet);
-      //buttonG.append(aGit);
 
-      divRed.append(buttonG, buttonN);
+      divRed.append(aGit, aNet);
       div.append(h2, p);
-      divC.append(div, figure, divRed);
-      li.append(divC, aGit, aNet);
+      divC.append(div, figure);
+      li.append(divC, divRed);
       ulCards.append(li);
     });
   
