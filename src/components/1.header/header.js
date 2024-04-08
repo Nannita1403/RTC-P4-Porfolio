@@ -12,10 +12,10 @@ header.innerHTML += `
     <h2 id="home" >Home</h2>
     <div class="header-links">
         <img src="/Instagram.png" alt="Instagram">
-        <p>Instagram</p> 
+        <a href=${`https://www.instagram.com/nannitamagi/?hl=es>Instagram</a>`}
         <img src="/Discord.png" alt="Discord">
-        <p>Discord</p> 
+        <a href=${`https://discord.com/users/Nataliamagi#8153>Discord</a>`}
         <img src="/Github.png" alt="GitHub">
-        <p>GitHub</p> 
+        <a href=${`https://github.com/Nannita1403>Github</a>`}
     </div>
 `;

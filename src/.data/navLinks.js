@@ -3,16 +3,16 @@ import { aboutMeSection } from '../components/3.Main/a.AboutMe/sectionAboutMe.js
 import { skillsSection } from '../components/3.Main/b.Skills/sectionSkills.js';
 import { worksSection } from '../components/3.Main/c.Works/sectionWorks.js';
 import { contactSection } from '../components/3.Main/d.Contact/sectionContact.js';
-//import { Contact } from '../components/6.Contact/sectionContact.js';
+//import {header} from '../components/1.header/header.js'; 
 
 
   export const navLinks = [
-     {
+     /*{
     name: 'Default',
     url: '#header',
-    img: {src:'/1.Default.png', alt:'defaul'},
-    //page: header,
-  },
+    img: {src:'/1.Default.png', alt:'Header'},
+    page: header,∫
+  },*/
   {
     name: 'About Me',
     url: '#AboutMe',

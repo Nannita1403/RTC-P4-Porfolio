@@ -10,14 +10,14 @@ import "./contact.css";
    const line = document.createElement('img')
    const text = document.createElement('p');
    const button = document.createElement('button');
-   const aMail = document.createElement('a');
+   const a = document.createElement('a');
    
    imgButtonMousse.src = './mousseLine.png';
    line.src = './Line-options.png';
    tittle.textContent = 'Contacto';
-   text.textContent = 'Seguimos en CONTACTO.. Estoy DISPONIBLE para tu PROPUESTA'
+   text.textContent = 'Seguimos en CONTACTO? Estoy DISPONIBLE para tu PROPUESTA'
    button.textContent = 'Contactame';
-   aMail.href = 'https://www.linkedin.com/in/natalia-andrea-magi-8b36b663/';
+   button.href='https://www.linkedin.com/in/natalia-andrea-magi-8b36b663/';
  
    contactSection.setAttribute('id','Contact');
    imgButtonMousse.classList.add('buttonMousse');
@@ -27,7 +27,7 @@ import "./contact.css";
    line.classList.add('line');
    button.classList.add('contact');
  
-   button.append(aMail);
+   a.append(button);
    sectionContact.append(tittle, line, text);
    contactSection.append(imgButtonMousse, sectionContact, button);
  
