@@ -1,6 +1,7 @@
 import { navLinks } from './src/.data/navLinks';
 import { header } from './src/components/1.header/header'
 import { aside, divApp } from './src/components/2.NavigationBar/aside'
+import { AboutMe } from './src/components/3.Main/a.AboutMe/secAbout';
 import { createAboutMe, divSections} from './src/components/3.Main/a.AboutMe/sectionAboutMe';
 import { Skills } from './src/components/3.Main/b.Skills/secSkills';
 import { createSkills } from './src/components/3.Main/b.Skills/sectionSkills';
@@ -21,7 +22,8 @@ const initializeApp = async () => {
   
   // Agrego sections y footer
   createAboutMe ();
-  divSections.appendChild(Skills);
+  //divSections.appendChild(Skills);
+  //divSections.appendChild(AboutMe);
   createSkills ();
   createProyects();
   createContact();

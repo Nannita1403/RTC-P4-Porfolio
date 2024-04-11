@@ -145,5 +145,4 @@ const bucleSkills = (skills, ul) => {
 })
 }*/
 
-
-divSections.append(Skills);
+//divSections.append(Skills);
