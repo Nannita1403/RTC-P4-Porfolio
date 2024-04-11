@@ -4,7 +4,7 @@
     flex-direction: column;
     position: relative;
     margin-top: 20px;
-    margin-left: 60px;
+    padding-left: 60px;
 }
 
  #Skills::after{
