@@ -48,6 +48,7 @@ export const createProyects = () => {
       buttonN.classList.add('btnNet');
       divC.classList.add('divC');
       divRed.classList.add('divRed')
+      li.classList.add('liWork')
 
       img.src=link.preview.src;
       h2.textContent = link.title;

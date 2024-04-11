@@ -34,7 +34,7 @@ aside {
         margin-top: 50px;
         margin-left: 5px;
     }
-    li img{
+    .imgNav{
         padding: 6px 6px;
         width: 30px;
     }

@@ -2,9 +2,56 @@ import { Backend, FrontEnd, Others } from '../../../.data/skills';
 import { divSections } from '../a.AboutMe/sectionAboutMe';
 import "./skills.css";
 
-export const skillsSection = document.createElement('div');
+export const Skills = document.createElement('div');
 
-export const createSkills = () => {
+Skills.innerHTML += `
+    <section id="skillsSection">
+        <img class="buttonMousse" src='./mousseLine.png'>
+        <section id="sectionSkills">
+            <h3 class="titleSkills" >Skills</h3>
+            <img class="line" src='./Line-options.png'>
+            <p class="textS" >'Me ESFUERZO por nunca dejar de APRENDER y MEJORAR'</p>
+        </section>
+        <section id="sectionIcons">
+            <div class="divSkills">
+            <button>FrontEnd</button>
+            <ul class="FrontEnd"></ul>
+            </div>
+            <div class="divSkills">
+            <button>Backend</button>
+            <ul class="Backend"></ul>
+            </div>
+            <div class="divSkills">
+            <button>Others</button>
+            <ul class="Others"></ul>
+            </div>
+        </section>
+    </section>
+`;
+/*const ulF = document.getElementsByClassName("FrontEnd");
+const ulB = document.getElementsByClassName("Backend");
+const ulO = document.getElementsByClassName("Others");
+
+
+const bucleSkills = (skills, ul) => {
+  //const type = document.getElementById("FrontEnd","Backend","Others");
+    skills.forEach((link, index) => {
+      const li = document.createElement('li');
+      const img = document.createElement('img')
+      const a = document.createElement('a');
+      img.src=link.img.src;
+      a.textContent = link.name;
+      a.append(img);
+      li.append(a);
+      ul.append(li);
+    });
+  }
+
+  bucleSkills(FrontEnd, ulF);
+  bucleSkills(Backend, ulB);
+  bucleSkills(Others, ulO);
+*/
+/*export const createSkills = () => {
   const imgButtonMousse = document.createElement('img');
   const sectionSkills = document.createElement('section');
   const tittle = document.createElement('h3');
@@ -96,7 +143,7 @@ export const createSkills = () => {
 
     text.innerHTML = coloredText;
 })
-}
+}*/
 
 
-divSections.append(skillsSection);
+divSections.append(Skills);

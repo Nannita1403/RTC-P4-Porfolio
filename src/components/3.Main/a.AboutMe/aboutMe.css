@@ -48,24 +48,22 @@
 .title {
    width: 350px;
    z-index: 0;
-   
 }
 
 .text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: c;
+    justify-content: space-around;
     margin-top: 30px;
     padding: 10px;
     height: 350px;
-    gap: 10px;
     background-color: var(--background-color1);
     border-radius: 15px;
 
 }
 .imgP {
-    width: 15px;
+    width: 25px;
+    z-index: 0;
 }
 
 .imgArt {
@@ -79,13 +77,78 @@ h3 {
  font-weight: var(--font-weigth-light-regular);
 }
 
-p {
+.textInfo {
     color: var(--color-white);
     font-family: var(--font-family-tittle); 
-    font-size: 1.5vw;
     font-weight: var(--font-weigth-thin);
+    z-index: 0;
 }
 
 .green {
     color: var(--title-color1);
   }
+
+@media screen and (max-width: 850px) {
+    input {
+        flex-grow: 0.6;
+    }
+    .sectAbout  {
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding-top: 50px;
+    }
+        
+    .buttonMousse {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    position: relative;
+}
+    .text {
+    margin-top: 20px;
+    padding: 10px;
+    height: 300px;
+    background-color: var(--background-color1);
+    border-radius: 15px;
+}
+
+.imgP {
+    width: 20px;
+}
+
+.imgArt {
+    width: 360px;
+}
+
+.title {
+    width: 250px;
+    z-index: 0;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+    .imgArt {
+        display: none;
+    }
+
+    .text {
+        height: 450px;
+    }
+
+    .textInfo {
+        display: block;
+    }
+    .imgP {
+        width: 25px;
+    }
+}
+@media screen and (max-width: 520px) {
+    .textInfo {
+    font-size: 3vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    
+}

@@ -15,6 +15,7 @@ export const divApp = document.querySelector("#app");
       const a = document.createElement('a');
       const img = document.createElement('img')
       li.classList.add('liNav');
+      img.classList.add('imgNav');
       //a.textContent = link.name;
       a.href = link.url;
       img.src=link.img.src;

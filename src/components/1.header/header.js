@@ -9,7 +9,6 @@ header.innerHTML += `
         <img class="logo" src="/_.png" alt="Logo C">
         <h3 class='nombre'>NataliaMagi</h3>
     </div>
-    <h2 id="home" >Home</h2>
     <div class="header-links">
         <img src="/Instagram.png" alt="Instagram">
         <a href=${`https://www.instagram.com/nannitamagi/?hl=es>Instagram</a>`}

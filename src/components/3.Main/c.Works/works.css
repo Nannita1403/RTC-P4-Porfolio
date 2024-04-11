@@ -38,7 +38,7 @@
     padding-bottom: calc(var(--numcards) * var(--card-top-offset));
     margin-bottom: var(--card-margin);
   }
-  li {
+  .liWork {
     position: sticky;
     top: 0;
     padding-top: calc(var(--index) * var(--card-top-offset));
