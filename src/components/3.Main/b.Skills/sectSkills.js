@@ -4,46 +4,34 @@ import "./skills.css";
 
 export const skillsSection = document.createElement('section');
 
-export const createSkills = () => {
+export const createSkills2 = () => {
   const imgButtonMousse = document.createElement('img');
+  imgButtonMousse.src = './mousseLine.png';
   const sectionSkills = document.createElement('section');
+  sectionSkills.classList.add('sectionSkills');
   const tittle = document.createElement('h3');
+  tittle.textContent = 'Skills';
   const line = document.createElement('img')
+  line.src = './Line-options.png';
   const text = document.createElement('p');
+  text.classList.add('textS');
+  text.textContent = 'Me ESFUERZO por nunca dejar de APRENDER y MEJORAR';
   const sectionIcons =document.createElement('section');
+  sectionIcons.classList.add('sectionIcons');
   const divF = document.createElement('div');
   const buttonF = document.createElement('button');
+  buttonF.textContent = 'FrontEnds';
   const ulIconsF = document.createElement('ul');
   const divB = document.createElement('div');
   const buttonB = document.createElement('button');
+  buttonB.textContent = 'Backend';
   const ulIconsB = document.createElement('ul');
   const divO = document.createElement('div');
   const buttonO = document.createElement('button');
-  const ulIconsO = document.createElement('ul');
-  
-  imgButtonMousse.src = './mousseLine.png';
-  line.src = './Line-options.png';
-  tittle.textContent = 'Skills';
-  text.textContent = 'Me ESFUERZO por nunca dejar de APRENDER y MEJORAR'
-  buttonF.textContent = 'FrontEnd';
-  buttonB.textContent = 'Backend';
   buttonO.textContent = 'Others ';
-
+  const ulIconsO = document.createElement('ul');
   skillsSection.setAttribute('id','Skills');
-  imgButtonMousse.classList.add('buttonMousse');
-  tittle.classList.add('titleSkills');
-  text.classList.add('textS')
-  sectionSkills.classList.add('sectionSkills');
-  line.classList.add('line');
-  sectionIcons.classList.add('sectionIcons');
-  divF.classList.add('divSkills');
-  divB.classList.add('divSkills');
-  divO.classList.add('divSkills');
-  ulIconsF.classList.add('ulIcon');
-  ulIconsB.classList.add('ulIcon');
-  ulIconsO.classList.add('ulIcon');
  
-
   const bucleSkills = (skill, ul) => {
     skill.forEach((link, index) => {
       const li = document.createElement('li');
@@ -67,7 +55,6 @@ export const createSkills = () => {
 
   sectionSkills.append(tittle, line, text);
   sectionIcons.append(divF, divB, divO);
-
   skillsSection.append(imgButtonMousse, sectionSkills, sectionIcons);
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -93,10 +80,8 @@ export const createSkills = () => {
             coloredText += `${word} `;
         }
     });
-
     text.innerHTML = coloredText;
 })
 }
 
-
-divSections.append();
+divSections.append(skillsSection);

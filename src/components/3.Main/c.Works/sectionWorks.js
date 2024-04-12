@@ -7,48 +7,40 @@ export const worksSection = document.createElement("Works");
 
 export const createProyects = () => {
     const imgButtonMousse = document.createElement('img');
-    const sectionWorks = document.createElement('section');
-    const tittle = document.createElement('h3');
-    const line = document.createElement('img')
-    const text = document.createElement('p');
-    const sectionCards =document.createElement('section');
-    const ulCards = document.createElement('ul');
-    const divCs = document.createElement('div');
- 
     imgButtonMousse.src = './mousseLine.png';
-    line.src = './Line-options.png';
+    imgButtonMousse.classList.add('buttonMousse');
+    const sectionWorks = document.createElement('section');
+    sectionWorks.classList.add('sectionWorks');
+    const tittle = document.createElement('h3');
     tittle.textContent = 'Works';
-    text.textContent = 'Pero las FUNCIONES no dicen NADA sin EJEMPLOS..'
+    const line = document.createElement('img');
+    line.src = './Line-options.png';
+    const text = document.createElement('p');
+    text.textContent = 'Pero las FUNCIONES no dicen NADA sin EJEMPLOS..';
+    const ulCards = document.createElement('ul');
+    ulCards.classList.add('ulCards');
+    const divCs = document.createElement('div');
+    divCs.classList.add('divCards');
   
     worksSection.setAttribute('id','Works');
-    imgButtonMousse.classList.add('buttonMousse');
-    tittle.classList.add('titleS');
-    text.classList.add('textS')
-    worksSection.classList.add('worksSection');
-    line.classList.add('line');
-    sectionWorks.classList.add('sectionWorks');
-    sectionCards.classList.add('sectionCards');
-    divCs.classList.add('divCards');
-    ulCards.classList.add('ulCards');
-   
+
     Works.forEach((link, index) => {
       const li = document.createElement('li');
       const divC = document.createElement('div');
+      divC.classList.add('divC');
       const h2 = document.createElement('h2');
       const p = document.createElement('p');
       const img = document.createElement('img')
       const divRed =document.createElement('div');
+      divRed.classList.add('divRed');
       const aGit = document.createElement('a');
       const aNet = document.createElement('a');
       const buttonG = document.createElement('button');
+      buttonG.classList.add('btnGit');
       const buttonN = document.createElement('button'); 
+      buttonN.classList.add('btnNet');
       const div =document.createElement('div');  
       const figure = document.createElement('figure'); 
-      buttonG.classList.add('btnGit');
-      buttonN.classList.add('btnNet');
-      divC.classList.add('divC');
-      divRed.classList.add('divRed')
-      li.classList.add('liWork')
 
       img.src=link.preview.src;
       h2.textContent = link.title;
@@ -68,10 +60,9 @@ export const createProyects = () => {
       ulCards.append(li);
     });
   
-    divCs.append(ulCards);
+    divCs.append(ulCards);  
     sectionWorks.append(tittle, line, text);
-    sectionCards.append(divCs);
-    worksSection.append(imgButtonMousse, sectionWorks, sectionCards);
+    worksSection.append(imgButtonMousse, sectionWorks, divCs);
   
     document.addEventListener("DOMContentLoaded", function() {
       if (!text) {

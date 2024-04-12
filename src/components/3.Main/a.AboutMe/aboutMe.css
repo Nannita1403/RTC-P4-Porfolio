@@ -21,14 +21,8 @@
     opacity: 0.25;
 }
 
-.buttonMousse {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 175px;
-    position: relative;
-}
-.sectAbout {
+
+#AboutMe section {
     display: flex; 
     justify-content: space-evenly;
     padding-top: 100px; 
@@ -36,13 +30,23 @@
     margin-right: 64px;
     padding-bottom: 30px;
     gap: 50px;
+    align-items: flex-end;
 }
 
-.artText {
+articule {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 880px;
+}   
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .title {
@@ -50,24 +54,27 @@
    z-index: 0;
 }
 
-.text {
+articule div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
     margin-top: 30px;
     padding: 10px;
-    height: 350px;
+    height: 450px;
     background-color: var(--background-color1);
     border-radius: 15px;
 
 }
-.imgP {
+articule div img{
     width: 25px;
     z-index: 0;
 }
 
 .imgArt {
     width: 460px;
+    height: 450px;
 }
 
 h3 {
@@ -77,7 +84,7 @@ h3 {
  font-weight: var(--font-weigth-light-regular);
 }
 
-.textInfo {
+articule div p {
     color: var(--color-white);
     font-family: var(--font-family-tittle); 
     font-weight: var(--font-weigth-thin);
@@ -92,7 +99,7 @@ h3 {
     input {
         flex-grow: 0.6;
     }
-    .sectAbout  {
+    #AboutMe section  {
     flex-wrap: wrap; 
     gap: 10px;
     padding-top: 50px;
@@ -105,7 +112,7 @@ h3 {
     margin-top: 50px;
     position: relative;
 }
-    .text {
+    articule div {
     margin-top: 20px;
     padding: 10px;
     height: 300px;
@@ -113,7 +120,7 @@ h3 {
     border-radius: 15px;
 }
 
-.imgP {
+articule div img {
     width: 20px;
 }
 
@@ -133,19 +140,19 @@ h3 {
         display: none;
     }
 
-    .text {
+    articule div {
         height: 450px;
     }
 
-    .textInfo {
+    articule div p {
         display: block;
     }
-    .imgP {
+    articule div img {
         width: 25px;
     }
 }
 @media screen and (max-width: 520px) {
-    .textInfo {
+    articule div p{
     font-size: 3vw;
     }
 }

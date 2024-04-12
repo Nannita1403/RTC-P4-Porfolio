@@ -1,47 +1,34 @@
 import "./aboutMe.css";
 
 export const divSections = document.querySelector("#sections");
-export const aboutMeSection = document.createElement('div');
+export const aboutMeSection = document.createElement('section');
 
 export const createAboutMe = () => {
   const imgButtonMousse = document.createElement('img');
+  imgButtonMousse.src = './mousseLine.png';
+  imgButtonMousse.classList.add('buttonMousse');
   const sectionAbout = document.createElement('section');
   const articuleText = document.createElement('articule');
   const title = document.createElement('img');
+  title.src = './btnAboutMe.png';
+  title.classList.add('title');
   const divText =document.createElement('div');
   const pImgInicio = document.createElement('img');
-  const textHola = document.createElement('h3');
-  const textInfo = document.createElement('p');
-  const pImgFinal = document.createElement('img');
-  const imgArticule = document.createElement('img');
-
-  imgButtonMousse.src = './mousseLine.png';
-  title.src = './btnAboutMe.png';
   pImgInicio.src = './_p_.png';
+  const textHola = document.createElement('h3');
   textHola.textContent = 'Hola!!!'
+  const textInfo = document.createElement('p');
   textInfo.textContent = 'Mi nombre es Natalia y me especializo en desarrollo web que utiliza HTML, CSS, JS y REACT, etc. Soy una persona muy motivada y eternamente optimista dedicada a escribir codigo claro, conciso y solido que funcione. Esforzandonos por nunca dejar de aprender y mejorar. Cuando no estoy codeando, leo o realizo algun nuevo proyecto artistico practico, como pintar. Me gusta que mi perspectiva y mis sistemas de creencias sean desafiados para poder ver el mundo con nuevos ojos.';
+  const pImgFinal = document.createElement('img');
   pImgFinal.src = './_p_.png';
+  const imgArticule = document.createElement('img');
   imgArticule.src = './imgArticule.png';
-
-  aboutMeSection.setAttribute('id','AboutMe');
-  imgButtonMousse.classList.add('buttonMousse');
-  title.classList.add('title');
-  divText.classList.add('text')
-  articuleText.classList.add('artText');
-  sectionAbout.classList.add('sectAbout');
-  pImgInicio.classList.add('imgP');
-  pImgFinal.classList.add('imgP');
   imgArticule.classList.add('imgArt');
-  textInfo.classList.add('textInfo');
-
-  divText.append(pImgInicio);
-  divText.append(textHola);
-  divText.append(textInfo);
-  divText.append(pImgFinal);
-  articuleText.append(title);
-  articuleText.append(divText);
-  sectionAbout.append(articuleText);
-  sectionAbout.append(imgArticule);
+  aboutMeSection.setAttribute('id','AboutMe');
+ 
+  divText.append(pImgInicio, textHola, textInfo, pImgFinal);
+  articuleText.append(title, divText);
+  sectionAbout.append(articuleText, imgArticule);
 
   aboutMeSection.append( imgButtonMousse, sectionAbout);
 

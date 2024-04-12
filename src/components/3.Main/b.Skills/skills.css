@@ -44,16 +44,16 @@
    align-items: center;
    justify-content: space-around;
 }
-.divSkills {
+.sectionIcons div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
     gap: 15px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.ulIcon {
+ul {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
