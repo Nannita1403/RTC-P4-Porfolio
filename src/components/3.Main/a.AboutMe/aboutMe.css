@@ -152,5 +152,9 @@ articule div p {
     }
 }
 @media screen and (max-width: 550px) {
-    
+    .title {
+        width: 200px;
+        z-index: 1;
+     }
+
 }
