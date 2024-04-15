@@ -21,14 +21,7 @@
     position: absolute;
     opacity: 0.35;
 }
-.textS {
-    display: flex;
-    justify-content: center;
-    padding: 20px 60px;
-    flex-wrap: wrap;
-    gap: 5px;
 
-}
 .sectionSkills {
     display: flex;
     flex-direction: column;
