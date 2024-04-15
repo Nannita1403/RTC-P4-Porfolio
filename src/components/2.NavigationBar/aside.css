@@ -21,17 +21,10 @@ aside {
     
 }
 
-@media screen and (max-width: 600px) {
-    aside {
-        margin-top: 70px;
-        margin-left: 10px;
-    }
-    
-}
 @media screen and (max-width: 400px) {
     aside {
         margin-top: 50px;
-        margin-left: 5px;
+
     }
     .imgNav{
         padding: 6px 6px;

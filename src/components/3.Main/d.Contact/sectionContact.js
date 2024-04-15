@@ -22,10 +22,8 @@ import "./contact.css";
  
    contactSection.setAttribute('id','Contact');
    imgButtonMousse.classList.add('buttonMousse');
-   tittle.classList.add('titleContact');
-   text.classList.add('textC')
+   text.classList.add('textS');
    sectionContact.classList.add('sectionContact');
-   line.classList.add('line');
    button.classList.add('contact');
  
    a.append(button);

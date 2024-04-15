@@ -5,6 +5,7 @@
     position: relative;
     margin-top: 20px;
     align-items: center;
+    padding-left: 40px;
 }
 
 #Contact::after{
@@ -21,14 +22,6 @@
     position: absolute;
     opacity: 0.35;
 }
-
-.textC {
-    display: flex;
-    justify-content: center;
-    padding: 20px 60px;
-    flex-wrap: wrap;
-    gap: 5px;
-}
 .sectionContact {
     display: flex;
     flex-direction: column;
@@ -39,7 +32,6 @@
 }
 
 .contact {
-    width: 460px;
     cursor: pointer;
 }
 

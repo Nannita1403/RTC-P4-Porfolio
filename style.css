@@ -71,7 +71,6 @@ h2{
   text-wrap: balance;
   color: var(--title-color1);
   font-family: var(--font-family-tittle);
-  font-size: 32px;
 }
 
 h4 {
@@ -140,8 +139,13 @@ button:after {
   top: 0;
   border-radius: 10px;
 }
-
-
+.textS {
+  display: flex;
+  justify-content: center;
+  padding: 20px 60px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
 
 /*h3 {
   font-size: 2em;

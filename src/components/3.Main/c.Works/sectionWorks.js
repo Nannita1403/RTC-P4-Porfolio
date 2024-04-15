@@ -16,6 +16,7 @@ export const createProyects = () => {
     const line = document.createElement('img');
     line.src = './Line-options.png';
     const text = document.createElement('p');
+    text.classList.add ('textS');
     text.textContent = 'Pero las FUNCIONES no dicen NADA sin EJEMPLOS..';
     const ulCards = document.createElement('ul');
     ulCards.classList.add('ulCards');

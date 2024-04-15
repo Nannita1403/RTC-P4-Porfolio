@@ -7,6 +7,7 @@ export const skillsSection = document.createElement('section');
 export const createSkills2 = () => {
   const imgButtonMousse = document.createElement('img');
   imgButtonMousse.src = './mousseLine.png';
+  imgButtonMousse.classList.add('buttonMousse');
   const sectionSkills = document.createElement('section');
   sectionSkills.classList.add('sectionSkills');
   const tittle = document.createElement('h3');

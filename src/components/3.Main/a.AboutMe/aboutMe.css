@@ -1,5 +1,4 @@
 #AboutMe {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -115,24 +114,20 @@ articule div p {
     articule div {
     margin-top: 20px;
     padding: 10px;
-    height: 300px;
+    height: 340px;
     background-color: var(--background-color1);
     border-radius: 15px;
 }
-
-articule div img {
+    articule div img {
     width: 20px;
 }
-
-.imgArt {
+    .imgArt {
     width: 360px;
 }
-
-.title {
+    .title {
     width: 250px;
     z-index: 0;
 }
-
 }
 
 @media screen and (max-width: 700px) {

@@ -23,10 +23,11 @@
   }
 
   .sectionWorks {
-    height: 35vh;
   display: grid;
   place-items: center;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 10px;
   }
 
   .ulCards {
@@ -91,13 +92,17 @@
 
   h2 {
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 5vw;
     margin: 0;
   }
-  
-  p {
-    font-weight: 300;
-    line-height: 1.42;
-    font-size: 1.1rem;
+
+@media screen and (max-width: 500px) {
+  .divC > figure > img {
+    display: none;
   }
-  
+   .divC {
+    padding: 1em;
+
+ }
+
+}
